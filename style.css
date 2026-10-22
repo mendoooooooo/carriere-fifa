@@ -204,3 +204,52 @@ main{padding:16px 14px calc(100px + env(safe-area-inset-bottom))}
 .t>span:nth-child(3){min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .box{padding:20px 16px calc(20px + env(safe-area-inset-bottom))}
 .big h3{font-size:19px}.card h3{font-size:16px}.head h2{font-size:22px}.hero p{margin-bottom:28px}}
+
+/* ---- fix v6: menu, overflow, pulsanti uniformi, mobile più compatto ---- */
+html,html body{overflow-x:visible;max-width:none}
+body{overflow-x:clip}
+main,.view{min-width:0}
+.top{height:64px;padding:0 clamp(16px,4vw,48px);flex-wrap:nowrap}
+nav{position:fixed;top:0;right:clamp(12px,4vw,44px);left:auto;bottom:auto;height:64px;display:flex;align-items:center;gap:6px;padding:0;background:none;border:0;backdrop-filter:none;z-index:6}
+.ph{top:64px}
+.head .btn,.head .btn.s{height:40px;padding:0 18px;font-size:14px;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap}
+@media(max-width:640px){
+body{font-size:14px}
+.top{height:50px;padding:0 14px}.top .brand{font-size:13px}
+nav{position:fixed;top:auto;left:0;right:0;bottom:0;height:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:4px 6px calc(4px + env(safe-area-inset-bottom));background:rgba(14,11,34,.94);backdrop-filter:blur(16px);border-top:1px solid var(--line)}
+nav button{display:flex;flex-direction:column;align-items:center;gap:0;padding:4px 0;font-size:10.5px;min-height:44px;border-radius:12px}
+nav i{display:block;font-size:17px;line-height:1.15}
+main{padding:14px 12px calc(84px + env(safe-area-inset-bottom))}
+.toast{bottom:calc(70px + env(safe-area-inset-bottom));font-size:13px;padding:10px 18px}
+.hero{min-height:calc(100svh - 170px)}.hero h1{font-size:clamp(30px,11vw,54px)}.hero p{font-size:14px;margin:12px auto 24px}
+.big{padding:18px}.big h3{font-size:17px}.big .ic{font-size:26px}
+.head{margin-bottom:16px;gap:10px}.head h2{font-size:20px}
+.head>.row{display:flex;flex-wrap:nowrap;gap:6px;width:100%}
+.head .btn,.head .btn.s{flex:1 1 0;min-width:0;height:36px;padding:0 4px;font-size:12px}
+.head>div>.btn.s{flex:none;height:30px;padding:0 12px}
+.btn[data-s]{font-size:0}.btn[data-s]::after{content:attr(data-s);font-size:12px}
+.head select{height:38px;padding:0 10px;font-size:14px}
+.card{padding:14px;border-radius:18px}.card h3{font-size:15px}
+.logo{width:40px;height:40px;font-size:16px;border-radius:12px}
+.sea{gap:10px}.sea .num{font-size:16px}
+.tag{font-size:11px;padding:2px 8px}
+.tabs button{padding:6px 12px;font-size:13px;min-height:34px}
+.t{padding:9px 12px;gap:8px;grid-template-columns:30px 1fr auto;border-radius:14px}.t .rk{font-size:14px}.t .v{font-size:16px}
+.pr{border-radius:14px;margin-bottom:5px}
+.pm{padding:8px 12px;gap:3px 4px;font-size:13px}
+.pm .nm{font-size:12.5px;padding-right:20px}
+.pm .pos{font-size:11px;padding:2px 8px}
+.pm .ov{font-size:12.5px}.pm .sv{font-size:13px}.pm .sv::before{font-size:9px}
+.pm .chev{top:8px;right:12px}
+.pdi{padding:2px 12px 10px}
+.dt{font-size:12px;margin:2px 0 8px}.dt td{padding:3px 2px}.dt th{padding:2px;font-size:10.5px}
+.dt td:first-child,.dt th:first-child{min-width:78px}
+.pdi .row{display:flex;gap:6px}.pdi .btn{flex:1 1 0;height:32px;padding:0;font-size:12px;display:flex;align-items:center;justify-content:center}
+.sum{gap:8px;margin-top:22px}.sum .card{padding:12px}.sum .num{font-size:20px}.sum small{font-size:11px}
+.box{padding:18px 14px calc(18px + env(safe-area-inset-bottom));border-radius:22px 22px 0 0}.box h3{font-size:18px;margin-bottom:12px}
+label{font-size:12px;margin:9px 0 3px}
+input,select{padding:9px 12px}
+.acts .btn{flex:1 1 0;height:40px;padding:0}
+.g6 input{padding:7px 2px}.stc{padding:10px}
+.file{padding:10px}.file .fp{width:46px;height:46px}
+.tb{font-size:12px}.tb td,.tb th{padding:7px 8px}}
