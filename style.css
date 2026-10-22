@@ -168,3 +168,12 @@ main{padding:18px 14px 80px}.hero{min-height:60vh}.hero h1{font-size:clamp(34px,
 .pm .chev{position:absolute;right:14px;top:12px}
 .pdi{padding:4px 14px 14px}.dt{font-size:13px}.dt td,.dt th{padding:6px 3px}.dt td:first-child,.dt th:first-child{min-width:84px}
 .sum{grid-template-columns:1fr 1fr;gap:10px}.sum .num{font-size:24px}}
+
+.modal.c{place-items:center}
+.cf{width:min(400px,100%);text-align:center}
+.cf .ic{width:54px;height:54px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;font:800 24px Unbounded;color:#ff8aa8;background:rgba(255,77,109,.14);box-shadow:0 0 0 8px rgba(255,77,109,.07);animation:pulse 2s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 14px rgba(255,77,109,.02)}}
+.cf h3{margin-bottom:8px;font-size:19px}.cf p{margin:0 0 4px}
+.cf .acts{justify-content:center}
+.btn.dng{background:linear-gradient(120deg,#ff3d6e,#ff8a5c);border:0;box-shadow:0 10px 30px -10px #ff3d6e}
+@media(max-width:640px){.modal.c{place-items:end center}.cf .acts .btn{flex:1}}
