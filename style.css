@@ -177,3 +177,30 @@ main{padding:18px 14px 80px}.hero{min-height:60vh}.hero h1{font-size:clamp(34px,
 .cf .acts{justify-content:center}
 .btn.dng{background:linear-gradient(120deg,#ff3d6e,#ff8a5c);border:0;box-shadow:0 10px 30px -10px #ff3d6e}
 @media(max-width:640px){.modal.c{place-items:end center}.cf .acts .btn{flex:1}}
+
+/* ---- mobile & proporzioni ---- */
+html{-webkit-text-size-adjust:100%}
+html,body{max-width:100%;overflow-x:hidden}
+.ml{overflow:hidden}
+.modal{overscroll-behavior:contain}
+.hero{min-height:calc(100svh - 190px)}
+nav i{display:none;font-style:normal}
+.f2>div,.g6>label,.stc,input,select{min-width:0}
+.pd{grid-template-columns:minmax(0,1fr)}.pd>div{min-width:0}
+.card,.pr{overflow-wrap:anywhere}
+.tb td:first-child,.tb th:first-child{position:sticky;left:0;background:#1a1638;z-index:1}
+@media(hover:none){.big:hover{transform:none;box-shadow:none}.big:hover::before{opacity:0}.btn:hover{transform:none}}
+@media(max-width:640px){
+.top{padding:10px 16px;padding-top:max(10px,env(safe-area-inset-top));flex-wrap:nowrap}
+.top .brand{font-size:14px}
+nav{position:fixed;left:0;right:0;bottom:0;z-index:6;display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:6px 8px calc(6px + env(safe-area-inset-bottom));background:rgba(14,11,34,.92);backdrop-filter:blur(16px);border-top:1px solid var(--line)}
+nav button{display:flex;flex-direction:column;align-items:center;gap:1px;padding:6px 0;font-size:11px;min-height:48px;border-radius:14px}
+nav i{display:block;font-size:19px;line-height:1.1}
+main{padding:16px 14px calc(100px + env(safe-area-inset-bottom))}
+.toast{bottom:calc(86px + env(safe-area-inset-bottom))}
+.pm{grid-template-columns:repeat(6,minmax(0,1fr))}.pm .nm{font-size:13.5px}
+.f2{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 10px}.f2.one{grid-template-columns:minmax(0,1fr)}
+.sea>.mu{grid-column:2}
+.t>span:nth-child(3){min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.box{padding:20px 16px calc(20px + env(safe-area-inset-bottom))}
+.big h3{font-size:19px}.card h3{font-size:16px}.head h2{font-size:22px}.hero p{margin-bottom:28px}}
