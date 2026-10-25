@@ -335,3 +335,23 @@ input,select{padding:9px 12px}
 .aw{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:10px}
 .aw .card{display:flex;gap:12px;align-items:center;padding:12px 14px}.aw i{font-style:normal;font-size:24px;color:var(--go)}
 @media(max-width:640px){.cx.cg{grid-template-columns:1fr}.trhero{padding:18px;gap:14px}.trm{margin-left:0;gap:20px;width:100%}.trhero .cup{width:64px;height:64px}.tile{padding:14px}.tile .n{font-size:30px}.vt{grid-template-columns:repeat(auto-fill,minmax(92px,1fr))}.chip{font-size:13px;padding:7px 12px}}
+
+/* ---- v10: sezioni apribili, X nelle card, pulsanti stagione ---- */
+.fold{margin:26px 0 0}.fold.sub{margin:14px 0 0}
+.fold>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:6px 2px;font:800 18px Unbounded;user-select:none}
+.fold>summary::-webkit-details-marker{display:none}
+.fold>summary::after{content:"";margin-left:auto;margin-right:6px;width:9px;height:9px;border-right:2px solid var(--mu);border-bottom:2px solid var(--mu);transform:rotate(45deg) translateY(-2px);transition:.3s}
+.fold[open]>summary::after{transform:rotate(-135deg) translateY(-2px)}
+.fold>summary em{font:700 12px Manrope;font-style:normal;padding:2px 10px;border-radius:99px;background:rgba(255,200,87,.16);color:var(--go)}
+.fold.sub>summary{font:700 15px Manrope;color:var(--mu)}
+.fold>.fb{padding-top:12px;animation:in .4s}
+.still,.still *{animation:none!important}
+.box{position:relative}.box h3{padding-right:38px}
+.xc{position:absolute;top:16px;right:16px;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.08);color:var(--mu);font-size:13px;display:grid;place-items:center;transition:.25s;z-index:2}
+.xc:hover{background:rgba(255,255,255,.2);color:var(--tx);transform:rotate(90deg)}
+.ha3{flex-direction:column;align-items:stretch;flex-wrap:nowrap;width:min(100%,400px)}
+.ha3 .row{width:100%}
+.ha .r3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.duo2{display:flex;gap:6px;min-width:0}
+.head .duo2 .btn{flex:1 1 0;min-width:0;padding:0;font-size:16px}
+@media(max-width:640px){.xc{top:12px;right:12px}.fold>summary{font-size:15px}.fold.sub>summary{font-size:14px}}
